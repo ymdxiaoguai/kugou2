@@ -1,0 +1,199 @@
+    /* 网页中基本样式初始化 start */
+
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    table,
+    p,
+    a,
+    image {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    /* 网页中基本样式初始化 end */
+    /* 头部开始*/
+
+    .mianPage {
+        position: relative;
+        width: 100%;
+        height: 4000px;
+        min-width: 1000px;
+        background-color: yellow;
+        font-size: 0;
+
+        .header {
+            position: relative;
+            width: 1000px;
+            height: 56px;
+            margin: 0 auto;
+            /*background-color: red;*/
+            padding-top: 22px;
+            img {
+                vertical-align: middle;
+            }
+            .search {
+                position: relative;
+                display: inline-block;
+                width: 300px;
+                height: 34px;
+                border: 1px solid #ccc;
+                vertical-align: middle;
+                margin-left: 40px;
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 249px;
+                    height: 24px;
+                    line-height: 24px;
+                    border: 0;
+                    margin-left: 14px;
+                    padding: 5px 0;
+                    color: #666;
+                    outline: none;
+                }
+                .iconfont {
+                    position: absolute;
+                    top: 0;
+                    right: 9px;
+                    display: block;
+                    margin: 8px 0 0 9px;
+                    font-size: 18px;
+                }
+            }
+            .headerRight {
+                position: absolute;
+                display: inline-block;
+                top: 30px;
+                right: 0;
+                >a {
+                    font-size: 14px;
+                    color: #777;
+                    padding: 0 15px;
+                }
+                .vip::after {
+                    content: "|";
+                    margin-left: 30px;
+                    color: #e6e6e6;
+                    height: 20px;
+                }
+                .login {
+                    display: inline-block;
+                    width: 48px;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #169af3;
+                    border-radius: 2px;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #169af3;
+                    /*padding: 0 5px;*/
+                    font-size: 14px;
+                }
+                .register {
+                    display: inline-block;
+                    width: 48px;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #dbdbdb;
+                    border-radius: 2px;
+                    text-align: center;
+                    color: #777;
+
+                    margin-left: 10px;
+                    background-color: #fff;
+                    /*padding: 0 5px;*/
+                    font-size: 14px;
+                }
+            }
+        }
+        .NavigationBar {
+            position: relative;
+            width: 100%;
+            height: 55px;
+            background-color: #2c323b;
+            .Bar {
+                width: 1000px;
+                position: relative;
+                margin: 0 auto;
+                .homeNav {
+                    position: relative;
+                    display: inline-block;
+                    background-color: #2c323b;
+
+                    .homePage {
+                        display: inline-block;
+                        background-color: #0c8ed9;
+                        color: #fff;
+                        font-size: 16px;
+                        height: 55px;
+                        line-height: 55px;
+                        padding: 0 30px;
+                    }
+                    a {
+                        display: inline-block;
+                        background-color: #2c323b;
+                        color: #ddd;
+                        font-size: 16px;
+                        height: 55px;
+                        line-height: 55px;
+                        padding: 0 30px;
+                    }
+                    .iconfont {
+                        margin-left: 10px;
+                    }
+                }
+                .subNav {
+                    display: inline-block;
+                    position: relative;
+                    float: right;
+                    margin-top: 19px;
+                    height: 35px;
+                    vertical-align: middle;
+                    >a {
+                        margin-left: 30px;
+                        color: #bbb;
+                        font-size: 13px;
+                    }
+                    .iconfont {
+                        margin-right: 5px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .Carousel {
+            /*overflow: hidden;*/
+            position: relative;
+            width: 1263px;
+            height: 445px;
+            background-color: pink;
+            .image-one {
+                width: 1263px;
+                height: 445px;
+                background: url(../images/lunbotu1.jpg) no-repeat center center;
+            }
+        }
+    }
+    /* 头部结束*/
