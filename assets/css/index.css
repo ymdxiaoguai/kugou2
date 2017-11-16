@@ -1,0 +1,1082 @@
+@charset "UTF-8";
+/* 网页中基本样式初始化 start */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+p,
+a,
+image {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 网页中基本样式初始化 end */
+.mianPage {
+  position: relative;
+  width: 100%;
+  height: 4000px;
+  min-width: 1000px;
+  background-color: yellow;
+  font-size: 0;
+}
+
+.header {
+  /* 头部开始*/
+  position: relative;
+  width: 1000px;
+  height: 56px;
+  margin: 0 auto;
+  /*background-color: red;*/
+  padding-top: 22px;
+}
+
+.header img {
+  vertical-align: middle;
+}
+
+.header .search {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 34px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.header .search input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 249px;
+  height: 24px;
+  line-height: 24px;
+  border: 0;
+  margin-left: 14px;
+  padding: 5px 0;
+  color: #666;
+  outline: none;
+}
+
+.header .search .iconfont {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  display: block;
+  margin: 8px 0 0 9px;
+  font-size: 18px;
+}
+
+.header .headerRight {
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  right: 0;
+}
+
+.header .headerRight > a {
+  font-size: 14px;
+  color: #777;
+  padding: 0 15px;
+}
+
+.header .headerRight > a:hover {
+  color: #169af3;
+}
+
+.header .headerRight > a:hover .register {
+  color: #777;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+.header .headerRight .vip::after {
+  content: "|";
+  margin-left: 30px;
+  color: #e6e6e6;
+  height: 20px;
+}
+
+.header .headerRight .login {
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #169af3;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  background-color: #169af3;
+  /*padding: 0 5px;*/
+  font-size: 14px;
+}
+
+.header .headerRight .register {
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  text-align: center;
+  color: #777;
+  margin-left: 10px;
+  background-color: #fff;
+  /*padding: 0 5px;*/
+  font-size: 14px;
+  /* 头部结束*/
+}
+
+.header .headerRight .register:hover {
+  color: #169af3;
+  border: 1px solid #169af3;
+  border-radius: 2px;
+}
+
+.NavigationBar {
+  /* 导航条  开始*/
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.NavigationBar .Bar {
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.NavigationBar .Bar .homeNav {
+  position: relative;
+  display: inline-block;
+  background-color: #2c323b;
+}
+
+.NavigationBar .Bar .homeNav .homePage {
+  display: inline-block;
+  background-color: #0c8ed9;
+  color: #fff;
+  font-size: 16px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 30px;
+}
+
+.NavigationBar .Bar .homeNav a {
+  display: inline-block;
+  background-color: #2c323b;
+  color: #ddd;
+  font-size: 16px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 30px;
+}
+
+.NavigationBar .Bar .homeNav a:hover {
+  background-color: #0c8ed9;
+  color: #fff;
+}
+
+.NavigationBar .Bar .homeNav .icon-zhankai {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.NavigationBar .Bar .homeNav .icon-icon {
+  display: none;
+  margin-left: 10px;
+  font-size: 17px;
+  /*margin-left: 10px;*/
+}
+
+.NavigationBar .Bar .homeNav .more {
+  position: relative;
+}
+
+.NavigationBar .Bar .homeNav .more:hover .icon-zhankai {
+  display: none;
+}
+
+.NavigationBar .Bar .homeNav .more:hover .icon-icon {
+  display: inline-block;
+}
+
+.NavigationBar .Bar .homeNav .more:hover .more-list {
+  display: block;
+}
+
+.NavigationBar .Bar .homeNav .more-list {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: none;
+  width: 112px;
+  height: 149px;
+  z-index: 9999;
+}
+
+.NavigationBar .Bar .homeNav .more-list li {
+  width: 99px;
+  height: 37px;
+  padding: 0 10px;
+  background-color: #2c323b;
+  line-height: 37px;
+  text-align: center;
+}
+
+.NavigationBar .Bar .homeNav .more-list li:hover {
+  background-color: #5a5a5a;
+}
+
+.NavigationBar .Bar .subNav {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 19px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+.NavigationBar .Bar .subNav > a {
+  margin-left: 30px;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.NavigationBar .Bar .subNav > a:hover {
+  color: #0c8ed9;
+}
+
+.NavigationBar .Bar .subNav .iconfont {
+  margin-right: 5px;
+  font-size: 13px;
+  /* 导航条  结束*/
+}
+
+.Carousel {
+  /* 轮播图  开始*/
+  width: 100%;
+  height: 445px;
+  /*background-color: pink;*/
+  /*overflow: hidden;*/
+}
+
+.Carousel .CarouselFigure {
+  position: relative;
+}
+
+.Carousel .CarouselFigure .Carousel-image {
+  display: inline-block;
+}
+
+.Carousel .CarouselFigure .Carousel-image li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.Carousel .CarouselFigure .image-one {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu1.jpg) no-repeat center center;
+  display: inline-block;
+}
+
+.Carousel .CarouselFigure .image-two {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu2.jpg) no-repeat center center;
+  display: inline-block;
+}
+
+.Carousel .CarouselFigure .image-three {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu3.jpg) no-repeat center center;
+  display: inline-block;
+}
+
+.Carousel .CarouselFigure .image-four {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  display: inline-block;
+  background: url(../images/lunbotu4.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-five {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  display: inline-block;
+  background: url(../images/lunbotu5.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-six {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu6.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-seven {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu7.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-eight {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu8.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-nine {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu9.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .image-ten {
+  width: 1263px;
+  height: 445px;
+  /*z-index: 3;*/
+  background: url(../images/lunbotu10.jpg) no-repeat center center;
+}
+
+.Carousel .CarouselFigure .Carousel-left {
+  position: absolute;
+  top: 162px;
+  left: 0;
+  width: 70px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.Carousel .CarouselFigure .Carousel-left .iconfont {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Carousel .CarouselFigure .Carousel-right {
+  position: absolute;
+  top: 162px;
+  right: 0;
+  width: 70px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.Carousel .CarouselFigure .Carousel-right .iconfont {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Carousel .CarouselFigure .Carousel-index {
+  position: absolute;
+  top: 360px;
+  left: 526px;
+}
+
+.Carousel .CarouselFigure .Carousel-index > li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.Carousel .CarouselFigure:hover .Carousel-left {
+  display: block;
+}
+
+.Carousel .CarouselFigure:hover .Carousel-right {
+  display: block;
+}
+
+.Carousel .download {
+  /*overflow: hidden;*/
+  position: absolute;
+  top: 518px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Carousel .download .downloadThree {
+  /*z-index: 20;*/
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -325px;
+  width: 745px;
+  height: 64px;
+  line-height: 58px;
+  color: #dee2e7;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.Carousel .download .downloadThree > a {
+  float: left;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 20px;
+  /*width: 140px;*/
+  padding-left: 55px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.Carousel .download .downloadThree .iconfont {
+  font-size: 22px;
+  color: #fff;
+  padding-right: 15px;
+}
+
+.Carousel .download .downloadThree > span {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 25px;
+  margin-left: 55px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  /* 轮播图  结束*/
+}
+
+.content {
+  position: relative;
+  width: 1000px;
+  height: 2000px;
+  margin: 0 auto;
+  background-color: purple;
+}
+
+.content .songShow {
+  width: 1000px;
+  height: 390px;
+  margin-top: 40px;
+  /*background-color: red;*/
+}
+
+.content .songShow .SelectTheSong {
+  display: inline-block;
+  width: 650px;
+  height: 390px;
+  /*background-color: blue;*/
+}
+
+.content .songShow .SelectTheSong .Songtitle {
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.content .songShow .SelectTheSong .Songtitle > h3 {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  color: #555;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content .songShow .SelectTheSong .Songtitle > h3 b {
+  font-weight: 400;
+  color: #009af3;
+}
+
+.content .songShow .SelectTheSong .Songtitle > a {
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  color: #999;
+  font-size: 10px;
+}
+
+.content .songShow .SelectTheSong .SongList {
+  width: 660px;
+  height: 330px;
+  /*background-color: #fff;*/
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one {
+  display: inline-block;
+  position: relative;
+  width: 325px;
+  height: 325px;
+  margin-right: 5px;
+  /*background-color: #000;*/
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one > img {
+  position: absolute;
+  width: 325px;
+  height: 325px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-1 {
+  position: absolute;
+  top: 275px;
+  width: 309px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  line-height: 20px;
+  padding: 6px 8px;
+  color: white;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-1 p {
+  color: #cfcfcf;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-2 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 205px;
+  height: 30px;
+  background: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, 0.4) 70%);
+  color: #fff;
+  text-align: right;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-2 i {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-3 {
+  position: absolute;
+  top: 0;
+  width: 325px;
+  height: 325px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: none;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one .list1-3 .iconfont {
+  position: absolute;
+  bottom: 7px;
+  right: 9px;
+  font-size: 30px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-one:hover .list1-3 {
+  display: block;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two {
+  /*float: left;*/
+  display: inline-block;
+  position: relative;
+  top: -167px;
+  width: 158px;
+  height: 158px;
+  /*margin-right: 5px;*/
+  background-color: red;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 158px;
+  height: 158px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 142px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  line-height: 20px;
+  padding: 6px 8px;
+  color: white;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-1 p {
+  color: #cfcfcf;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-2 {
+  position: absolute;
+  top: 0px;
+  left: 13px;
+  width: 145px;
+  height: 30px;
+  background: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, 0.4) 70%);
+  color: #fff;
+  text-align: right;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-2 i {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  font-size: 13px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 158px;
+  height: 158px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two .list2-3 .iconfont {
+  position: absolute;
+  bottom: 7px;
+  right: 9px;
+  font-size: 30px;
+}
+
+.content .songShow .SelectTheSong .SongList .SongList-two:hover .list2-3 {
+  display: block;
+}
+
+.content .songShow .HotSong {
+  display: inline-block;
+  float: right;
+  width: 320px;
+  height: 390px;
+  /*background-color: green;*/
+}
+
+.content .songShow .HotSong .Hottitle {
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.content .songShow .HotSong .Hottitle > h3 {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  color: #555;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content .songShow .HotSong .Hottitle > h3 b {
+  font-weight: 400;
+  color: #009af3;
+}
+
+.content .songShow .HotSong .Hottitle > a {
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  color: #999;
+  font-size: 10px;
+}
+
+.content .songShow .HotSong .list6 {
+  position: relative;
+  margin-bottom: 15px;
+  background-color: #f6f6f6;
+}
+
+.content .songShow .HotSong .list6 div {
+  display: inline-block;
+}
+
+.content .songShow .HotSong .list6 img {
+  /*margin-bottom: 9px;*/
+  vertical-align: middle;
+}
+
+.content .songShow .HotSong .list6 .icon-mjiantou-copy {
+  position: absolute;
+  top: 46px;
+  right: 9px;
+}
+
+.content .songShow .HotSong .list6 .icon-bofang {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+  font-size: 35px;
+  color: white;
+}
+
+.content .songShow .HotSong .list6 .list6-text {
+  position: absolute;
+  top: 5px;
+  width: 180px;
+  height: 68px;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  /*background: rgba(0, 0, 0, .3);*/
+}
+
+.content .songShow .HotSong .list6 .list6-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 98px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+}
+
+.content .songShow .HotSong .list6:hover .list6-3 {
+  display: block;
+}
+
+.content .list9 {
+  clear: both;
+  display: inline-block;
+  width: 1000px;
+  height: 80px;
+  margin-top: 16px;
+}
+
+.songNew {
+  margin-top: 40px;
+}
+
+.songNew .NewSongsStart {
+  float: left;
+  width: 650px;
+  height: 375px;
+  background-color: red;
+}
+
+.songNew .NewSongsStart .Songtitle {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.songNew .NewSongsStart .Songtitle h3 {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  color: #555;
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.songNew .NewSongsStart .Songtitle h3 b {
+  font-weight: 400;
+  color: #009af3;
+  font-size: 30px;
+}
+
+.songNew .NewSongsStart .Songtitle .songType {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.songNew .NewSongsStart .Songtitle .songType span {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.songNew .NewSongsStart .Songtitle .newsong-submit {
+  float: right;
+  /*height: 30px;*/
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 0px 10px;
+  color: #555;
+  background: white;
+  font-size: 13px;
+  /*vertical-align: middle;*/
+}
+
+.songNew .NewSongsStart .Songtitle .newsong-submit .iconfont {
+  font-size: 10px;
+}
+
+.songNew .NewSongsStart .SongContent {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background-color: pink;
+}
+
+.songNew .NewSongsStart .SongContent li {
+  height: 35px;
+  width: 650px;
+  line-height: 35px;
+  font-size: 13px;
+}
+
+.songNew .NewSongsStart .SongContent li > a {
+  display: inline-block;
+  width: 650px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  line-height: 35px;
+  /*padding: 0 10px;*/
+  color: #333;
+  vertical-align: middle;
+}
+
+.songNew .NewSongsStart .SongContent li .iconnew {
+  display: inline-block;
+  width: 22px;
+  height: 15px;
+  margin: 0px 0 0 10px;
+  /*padding: 0 0 0 21px;*/
+  background: url(../images/jingling.png) -120px -238px no-repeat;
+  vertical-align: middle;
+}
+
+.songNew .NewSongsStart .SongContent li span {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  vertical-align: middle;
+}
+
+.songNew .NewSongsStart .SongContent li .icon-bofang1 {
+  position: absolute;
+  right: 70px;
+  top: 0;
+  vertical-align: middle;
+  display: none;
+}
+
+.songNew .NewSongsStart .SongContent li .icon-xiazai {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  vertical-align: middle;
+  display: none;
+}
+
+.songNew .NewSongsStart .SongContent li:hover .iconfont {
+  display: block;
+}
+
+.songNew .NewSongsStart .SongContent li:hover {
+  background-color: rgba(200, 200, 255, 0.4);
+}
+
+.songNew .NewSongsStart .SongContent li:hover a {
+  color: #009af3;
+}
+
+.songNew .Recommend {
+  float: right;
+  width: 332px;
+}
+
+.songNew .Recommend .RecommendMV {
+  padding-bottom: 20px;
+}
+
+.songNew .Recommend .RecommendMV h3 {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  color: #555;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.songNew .Recommend .RecommendMV h3 b {
+  font-weight: 400;
+  color: #009af3;
+  font-size: 30px;
+}
+
+.songNew .Recommend .RecommendMV > a {
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  color: #999;
+  font-size: 10px;
+}
+
+.songNew .Recommend .RecommendList {
+  width: 332px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 {
+  position: relative;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 .newsong-list6-1 {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 312px;
+  padding: 6px 0 6px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  height: 38px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 .newsong-list6-1 > a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  line-height: 19px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 .newsong-list6-1 p {
+  color: #cfcfcf;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 .newsong-list6-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 176px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6 .newsong-list6-2 i {
+  position: absolute;
+  top: 68px;
+  right: 140px;
+  font-size: 40px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list6:hover .newsong-list6-2 {
+  display: block;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 {
+  position: relative;
+  display: inline-block;
+  width: 154px;
+  height: 125px;
+  margin-right: 12px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 .newsong-list7-1 {
+  padding: 5px 0 0;
+  width: 144px;
+  font-size: 14px;
+  height: 38px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 .newsong-list7-1 > a {
+  width: 154px;
+  color: #444;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 .newsong-list7-1 p {
+  color: #888;
+  font-size: 12px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 .newsong-list7-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 84px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: none;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 .newsong-list7-2 i {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 40px;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7:hover .newsong-list7-2 {
+  display: block;
+}
+
+.songNew .Recommend .RecommendList .newsong-list7 :hover .newsong-list7-1 > a {
+  color: #009af3;
+}
+
+.active {
+  display: inline-block !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+}

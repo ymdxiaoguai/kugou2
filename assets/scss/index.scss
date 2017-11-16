@@ -1,0 +1,950 @@
+    /* 网页中基本样式初始化 start */
+
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    table,
+    p,
+    a,
+    image {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    /* 网页中基本样式初始化 end */
+
+    .mianPage {
+        position: relative;
+        width: 100%;
+        height: 4000px;
+        min-width: 1000px;
+        background-color: yellow;
+        font-size: 0;
+    }
+
+    .header {
+        /* 头部开始*/
+        position: relative;
+        width: 1000px;
+        height: 56px;
+        margin: 0 auto;
+        /*background-color: red;*/
+        padding-top: 22px;
+        img {
+            vertical-align: middle;
+        }
+        .search {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: 34px;
+            border: 1px solid #ccc;
+            vertical-align: middle;
+            margin-left: 40px;
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 249px;
+                height: 24px;
+                line-height: 24px;
+                border: 0;
+                margin-left: 14px;
+                padding: 5px 0;
+                color: #666;
+                outline: none;
+            }
+            .iconfont {
+                position: absolute;
+                top: 0;
+                right: 9px;
+                display: block;
+                margin: 8px 0 0 9px;
+                font-size: 18px;
+            }
+        }
+        .headerRight {
+            position: absolute;
+            display: inline-block;
+            top: 30px;
+            right: 0;
+            >a {
+                font-size: 14px;
+                color: #777;
+                padding: 0 15px;
+                &:hover {
+                    color: #169af3;
+                }
+                &:hover .register {
+                    color: #777;
+                    border: 1px solid #dbdbdb;
+                    border-radius: 2px;
+                }
+            }
+            .vip::after {
+                content: "|";
+                margin-left: 30px;
+                color: #e6e6e6;
+                height: 20px;
+            }
+            .login {
+                display: inline-block;
+                width: 48px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #169af3;
+                border-radius: 2px;
+                text-align: center;
+                color: #fff;
+                background-color: #169af3;
+                /*padding: 0 5px;*/
+                font-size: 14px;
+            }
+            .register {
+                display: inline-block;
+                width: 48px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #dbdbdb;
+                border-radius: 2px;
+                text-align: center;
+                color: #777;
+                margin-left: 10px;
+                background-color: #fff;
+                /*padding: 0 5px;*/
+                font-size: 14px;
+                /* 头部结束*/
+                &:hover {
+                    color: #169af3;
+                    border: 1px solid #169af3;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    .NavigationBar {
+        /* 导航条  开始*/
+        position: relative;
+        width: 100%;
+        height: 55px;
+        background-color: #2c323b;
+        .Bar {
+            width: 1000px;
+            position: relative;
+            margin: 0 auto;
+            .homeNav {
+                position: relative;
+                display: inline-block;
+                background-color: #2c323b;
+                .homePage {
+                    display: inline-block;
+                    background-color: #0c8ed9;
+                    color: #fff;
+                    font-size: 16px;
+                    height: 55px;
+                    line-height: 55px;
+                    padding: 0 30px;
+                }
+                a {
+                    display: inline-block;
+                    background-color: #2c323b;
+                    color: #ddd;
+                    font-size: 16px;
+                    height: 55px;
+                    line-height: 55px;
+                    padding: 0 30px;
+                    &:hover {
+                        background-color: #0c8ed9;
+                        color: #fff;
+                    }
+                }
+                .icon-zhankai {
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+                .icon-icon {
+                    display: none;
+                    margin-left: 10px;
+                    font-size: 17px;
+                    /*margin-left: 10px;*/
+                }
+                .more {
+                    position: relative;
+                    &:hover .icon-zhankai {
+                        display: none;
+                    }
+                    &:hover .icon-icon {
+                        display: inline-block;
+                    }
+                    &:hover .more-list {
+                        display: block;
+                    }
+                }
+                .more-list {
+                    position: absolute;
+                    top: 55px;
+                    left: 0;
+                    display: none;
+                    width: 112px;
+                    height: 149px;
+                    z-index: 9999;
+                    li {
+                        width: 99px;
+                        height: 37px;
+                        padding: 0 10px;
+                        background-color: #2c323b;
+                        line-height: 37px;
+                        text-align: center;
+                        &:hover {
+                            background-color: rgb(90, 90, 90);
+                        }
+                    }
+                }
+            }
+            .subNav {
+                display: inline-block;
+                position: relative;
+                float: right;
+                margin-top: 19px;
+                height: 35px;
+                vertical-align: middle;
+                >a {
+                    margin-left: 30px;
+                    color: #bbb;
+                    font-size: 13px;
+                    &:hover {
+                        color: #0c8ed9;
+                    }
+                }
+                .iconfont {
+                    margin-right: 5px;
+                    font-size: 13px;
+                    /* 导航条  结束*/
+                }
+            }
+        }
+    }
+
+    .Carousel {
+        /* 轮播图  开始*/
+        width: 100%;
+        height: 445px;
+        /*background-color: pink;*/
+        /*overflow: hidden;*/
+        .CarouselFigure {
+            position: relative;
+            .Carousel-image {
+                display: inline-block;
+                li {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                }
+            }
+            .image-one {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu1.jpg) no-repeat center center;
+                display: inline-block;
+            }
+            .image-two {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu2.jpg) no-repeat center center;
+                display: inline-block;
+            }
+            .image-three {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu3.jpg) no-repeat center center;
+                display: inline-block;
+            }
+            .image-four {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                display: inline-block;
+                background: url(../images/lunbotu4.jpg) no-repeat center center;
+            }
+            .image-five {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                display: inline-block;
+                background: url(../images/lunbotu5.jpg) no-repeat center center;
+            }
+            .image-six {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu6.jpg) no-repeat center center;
+            }
+            .image-seven {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu7.jpg) no-repeat center center;
+            }
+            .image-eight {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu8.jpg) no-repeat center center;
+            }
+            .image-nine {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu9.jpg) no-repeat center center;
+            }
+            .image-ten {
+                width: 1263px;
+                height: 445px;
+                /*z-index: 3;*/
+                background: url(../images/lunbotu10.jpg) no-repeat center center;
+            }
+            .Carousel-left {
+                position: absolute;
+                top: 162px;
+                left: 0;
+                width: 70px;
+                height: 120px;
+                background-color: rgba(0, 0, 0, .4);
+                display: none;
+                .iconfont {
+                    position: absolute;
+                    top: 35px;
+                    left: 5px;
+                    font-size: 50px;
+                    color: rgba(255, 255, 255, .5);
+                }
+            }
+            .Carousel-right {
+                position: absolute;
+                top: 162px;
+                right: 0;
+                width: 70px;
+                height: 120px;
+                background-color: rgba(0, 0, 0, .4);
+                display: none;
+                .iconfont {
+                    position: absolute;
+                    top: 35px;
+                    right: 5px;
+                    font-size: 50px;
+                    color: rgba(255, 255, 255, .5);
+                }
+            }
+            .Carousel-index {
+                position: absolute;
+                top: 360px;
+                left: 526px;
+                >li {
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    background-color: rgba(255, 255, 255, .5);
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+            }
+            &:hover .Carousel-left {
+                display: block;
+            }
+            &:hover .Carousel-right {
+                display: block;
+            }
+        }
+        .download {
+            /*overflow: hidden;*/
+            position: absolute;
+            top: 518px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, .3);
+            .downloadThree {
+                /*z-index: 20;*/
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                margin-left: -325px;
+                width: 745px;
+                height: 64px;
+                line-height: 58px;
+                color: #dee2e7;
+                border-radius: 32px;
+                text-align: center;
+                font-size: 24px;
+                >a {
+                    float: left;
+                    display: block;
+                    height: 25px;
+                    line-height: 25px;
+                    margin-top: 20px;
+                    /*width: 140px;*/
+                    padding-left: 55px;
+                    font-size: 15px;
+                    color: #fff;
+                    text-align: center;
+                }
+                .iconfont {
+                    font-size: 22px;
+                    color: #fff;
+                    padding-right: 15px;
+                }
+                >span {
+                    float: left;
+                    height: 18px;
+                    line-height: 18px;
+                    margin-top: 25px;
+                    margin-left: 55px;
+                    border-right: 1px solid rgba(255, 255, 255, .2);
+                    /* 轮播图  结束*/
+                }
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        width: 1000px;
+        height: 2000px;
+        margin: 0 auto;
+        background-color: purple;
+        .songShow {
+            width: 1000px;
+            height: 390px;
+            margin-top: 40px;
+            /*background-color: red;*/
+            .SelectTheSong {
+                display: inline-block;
+                width: 650px;
+                height: 390px;
+                /*background-color: blue;*/
+                .Songtitle {
+                    height: 30px;
+                    line-height: 30px;
+                    padding-bottom: 30px;
+                    >h3 {
+                        display: inline-block;
+                        width: 120px;
+                        height: 30px;
+                        margin-right: 25px;
+                        color: #555;
+                        font-size: 30px;
+                        font-weight: 400;
+                        b {
+                            font-weight: 400;
+                            color: #009af3;
+                        }
+                    }
+                    >a {
+                        display: inline-block;
+                        float: right;
+                        margin-top: 7px;
+                        color: #999;
+                        font-size: 10px;
+                    }
+                }
+                .SongList {
+                    width: 660px;
+                    height: 330px;
+                    /*background-color: #fff;*/
+                    .SongList-one {
+                        display: inline-block;
+                        position: relative;
+                        width: 325px;
+                        height: 325px;
+                        margin-right: 5px;
+                        /*background-color: #000;*/
+                        >img {
+                            position: absolute;
+                            width: 325px;
+                            height: 325px;
+                        }
+                        .list1-1 {
+                            position: absolute;
+                            top: 275px;
+                            width: 309px;
+                            height: 38px;
+                            background-color: rgba(0, 0, 0, .4);
+                            text-align: left;
+                            line-height: 20px;
+                            padding: 6px 8px;
+                            color: white;
+                            font-size: 13px;
+                            p {
+                                color: #cfcfcf;
+                            }
+                        }
+                        .list1-2 {
+                            position: absolute;
+                            top: 0px;
+                            right: 0;
+                            width: 205px;
+                            height: 30px;
+                            background: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .4) 70%);
+                            color: #fff;
+                            text-align: right;
+                            line-height: 30px;
+                            font-size: 13px;
+                            i {
+                                position: absolute;
+                                top: 0;
+                                right: 60px;
+                                font-size: 13px;
+                            }
+                        }
+                        .list1-3 {
+                            position: absolute;
+                            top: 0;
+                            width: 325px;
+                            height: 325px;
+                            background-color: rgba(0, 0, 0, .4);
+                            color: #fff;
+                            display: none;
+                            .iconfont {
+                                position: absolute;
+                                bottom: 7px;
+                                right: 9px;
+                                font-size: 30px;
+                            }
+                        }
+                        &:hover .list1-3 {
+                            display: block;
+                        }
+                    }
+                    .SongList-two {
+                        /*float: left;*/
+                        display: inline-block;
+                        position: relative;
+                        top: -167px;
+                        width: 158px;
+                        height: 158px;
+                        /*margin-right: 5px;*/
+                        background-color: red;
+                        img {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 158px;
+                            height: 158px;
+                        }
+                        .list2-1 {
+                            position: absolute;
+                            bottom: 0px;
+                            left: 0px;
+                            width: 142px;
+                            height: 38px;
+                            background-color: rgba(0, 0, 0, .4);
+                            text-align: left;
+                            line-height: 20px;
+                            padding: 6px 8px;
+                            color: white;
+                            font-size: 13px;
+
+                            p {
+                                color: #cfcfcf;
+                            }
+                        }
+                        .list2-2 {
+                            position: absolute;
+                            top: 0px;
+                            left: 13px;
+                            width: 145px;
+                            height: 30px;
+                            background: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .4) 70%);
+                            color: #fff;
+                            text-align: right;
+                            line-height: 30px;
+                            font-size: 13px;
+                            i {
+                                position: absolute;
+                                top: 0;
+                                right: 55px;
+                                font-size: 13px;
+                            }
+                        }
+                        .list2-3 {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 158px;
+                            height: 158px;
+                            background-color: rgba(0, 0, 0, .5);
+                            color: #fff;
+                            display: none;
+                            .iconfont {
+                                position: absolute;
+                                bottom: 7px;
+                                right: 9px;
+                                font-size: 30px;
+                            }
+                        }
+                        &:hover .list2-3 {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .HotSong {
+                display: inline-block;
+                float: right;
+                width: 320px;
+                height: 390px;
+                /*background-color: green;*/
+                .Hottitle {
+                    height: 30px;
+                    line-height: 30px;
+                    padding-bottom: 30px;
+                    >h3 {
+                        display: inline-block;
+                        width: 120px;
+                        height: 30px;
+                        margin-right: 25px;
+                        color: #555;
+                        font-size: 30px;
+                        font-weight: 400;
+                        b {
+                            font-weight: 400;
+                            color: #009af3;
+                        }
+                    }
+                    >a {
+                        display: inline-block;
+                        float: right;
+                        margin-top: 7px;
+                        color: #999;
+                        font-size: 10px;
+                    }
+                }
+                .list6 {
+                    position: relative;
+                    margin-bottom: 15px;
+                    background-color: #f6f6f6;
+                    div {
+                        display: inline-block;
+                    }
+                    img {
+                        /*margin-bottom: 9px;*/
+                        vertical-align: middle;
+                    }
+                    .icon-mjiantou-copy {
+                        position: absolute;
+                        top: 46px;
+                        right: 9px;
+                    }
+                    .icon-bofang {
+                        position: absolute;
+                        top: 31px;
+                        left: 31px;
+                        font-size: 35px;
+                        color: rgb(255, 255, 255);
+                    }
+                    .list6-text {
+                        position: absolute;
+                        top: 5px;
+                        width: 180px;
+                        height: 68px;
+                        padding: 15px 10px;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, .9);
+                        /*background: rgba(0, 0, 0, .3);*/
+                    }
+                    .list6-3 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 98px;
+                        height: 98px;
+                        background-color: rgba(0, 0, 0, .5);
+                        color: #fff;
+                        display: none;
+                    }
+                    &:hover .list6-3 {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .list9 {
+            clear: both;
+            display: inline-block;
+            width: 1000px;
+            height: 80px;
+            margin-top: 16px;
+        }
+    }
+
+    .songNew {
+        margin-top: 40px;
+        .NewSongsStart {
+            float: left;
+            width: 650px;
+            height: 375px;
+            background-color: red;
+            .Songtitle {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #f0f0f0;
+                margin-bottom: 10px;
+                height: 30px;
+                line-height: 30px;
+                h3 {
+                    display: inline-block;
+                    width: 120px;
+                    height: 30px;
+                    margin-right: 25px;
+                    color: #555;
+                    font-size: 30px;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    b {
+                        font-weight: 400;
+                        color: #009af3;
+                        font-size: 30px;
+                    }
+                }
+                .songType {
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    vertical-align: middle;
+                    span {
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                }
+                .newsong-submit {
+                    float: right;
+                    /*height: 30px;*/
+                    border: 1px solid #dbdbdb;
+                    border-radius: 2px;
+                    padding: 0px 10px;
+                    color: #555;
+                    background: rgb(255, 255, 255);
+                    font-size: 13px;
+                    /*vertical-align: middle;*/
+                    .iconfont {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .SongContent {
+                position: relative;
+                height: 280px;
+                overflow: hidden;
+                background-color: pink;
+                li {
+                    height: 35px;
+                    width: 650px;
+                    line-height: 35px;
+                    font-size: 13px;
+                    >a {
+                        display: inline-block;
+                        width: 650px;
+                        float: left;
+                        position: relative;
+                        overflow: hidden;
+                        height: 35px;
+                        line-height: 35px;
+                        /*padding: 0 10px;*/
+                        color: #333;
+                        vertical-align: middle;
+                    }
+                    .iconnew {
+                        display: inline-block;
+                        width: 22px;
+                        height: 15px;
+                        margin: 0px 0 0 10px;
+                        /*padding: 0 0 0 21px;*/
+                        background: url(../images/jingling.png) -120px -238px no-repeat;
+                        vertical-align: middle;
+                    }
+                    span {
+                        position: absolute;
+                        right: 0px;
+                        top: 0;
+                        vertical-align: middle;
+                    }
+                    .icon-bofang1 {
+                        position: absolute;
+                        right: 70px;
+                        top: 0;
+                        vertical-align: middle;
+                        display: none;
+                    }
+                    .icon-xiazai {
+                        position: absolute;
+                        right: 50px;
+                        top: 0;
+                        vertical-align: middle;
+                        display: none;
+                    }
+                    &:hover .iconfont {
+                        display: block;
+                    }
+                    &:hover {
+                        background-color: rgba(200, 200, 255, .4);
+                    }
+                    &:hover a {
+                        color: #009af3;
+                    }
+                }
+            }
+        }
+        .Recommend {
+            float: right;
+            width: 332px;
+            .RecommendMV {
+                padding-bottom: 20px;
+                h3 {
+                    display: inline-block;
+                    width: 120px;
+                    height: 30px;
+                    margin-right: 25px;
+                    color: #555;
+                    font-size: 30px;
+                    font-weight: 400;
+                    b {
+                        font-weight: 400;
+                        color: #009af3;
+                        font-size: 30px;
+                    }
+                }
+                >a {
+                    display: inline-block;
+                    float: right;
+                    margin-top: 7px;
+                    color: #999;
+                    font-size: 10px;
+                }
+            }
+            .RecommendList {
+                width: 332px;
+                .newsong-list6 {
+                    position: relative;
+
+                    .newsong-list6-1 {
+                        position: absolute;
+                        bottom: 12px;
+                        left: 0;
+                        width: 312px;
+                        padding: 6px 0 6px 8px;
+                        background: rgba(0, 0, 0, .5);
+                        font-size: 14px;
+                        height: 38px;
+                        >a {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: #fff;
+                            line-height: 19px;
+                        }
+                        p {
+                            color: #cfcfcf;
+                        }
+                    }
+                    .newsong-list6-2 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 320px;
+                        height: 176px;
+                        background-color: rgba(0, 0, 0, .5);
+                        color: #fff;
+                        display: none;
+                        i {
+                            position: absolute;
+                            top: 68px;
+                            right: 140px;
+                            font-size: 40px;
+                        }
+                    }
+                    &:hover .newsong-list6-2 {
+                        display: block;
+                    }
+                }
+                .newsong-list7 {
+                    position: relative;
+                    display: inline-block;
+                    width: 154px;
+                    height: 125px;
+                    margin-right: 12px;
+                    .newsong-list7-1 {
+                        padding: 5px 0 0;
+                        width: 144px;
+                        font-size: 14px;
+                        height: 38px;
+                        >a {
+                            width: 154px;
+                            color: #444;
+                            font-size: 14px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        p {
+                            color: #888;
+                            font-size: 12px;
+                        }
+                    }
+                    .newsong-list7-2 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 150px;
+                        height: 84px;
+                        background: rgba(0, 0, 0, .3);
+                        color: #fff;
+                        display: none;
+                        i {
+                            position: absolute;
+                            top: 20px;
+                            left: 50px;
+                            font-size: 40px;
+                        }
+                    }
+                    &:hover .newsong-list7-2 {
+                        display: block;
+                    }
+                     :hover .newsong-list7-1>a {
+                        color: #009af3;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        display: inline-block!important;
+        width: 8px!important;
+        height: 8px!important;
+        background-color: rgb(255, 255, 255)!important;
+        border-radius: 50%!important;
+    }
